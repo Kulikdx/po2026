@@ -17,12 +17,9 @@ public class Lotto {
             int x = r.nextInt(50);
             boolean jest = lista.contains(x);
             if (jest != true && x !=0) {
-                //lista.remove(i-1);
-                //x = r.nextInt(50);
                 lista.add(x);
                 i++;
             }
-            //lista.add(x);
         }
         System.out.println("Twoje typy: " + typy);
         System.out.println("Wylosowane liczby: " + lista);
