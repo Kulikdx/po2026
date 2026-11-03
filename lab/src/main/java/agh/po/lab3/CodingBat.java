@@ -38,11 +38,19 @@ public class CodingBat {
         return ilosc;
     }
 
+    public String withouEnd2(String str) {
+        if (str.length() < 2) {
+            return "";
+        }
+        return str.substring(1, str.length() - 1);
+    }
+
 
     public static void main(String[] args){
         CodingBat codingBat = new CodingBat();
         codingBat.doubleX("axxx");
-        codingBat.array123(new int[]{11231});
-        codingBat.countEvens(new int[]{135});
+        codingBat.array123(new int[]{1,1,2,3,1});
+        codingBat.countEvens(new int[]{1,3,5});
+        codingBat.withouEnd2("Hello");
     }
 }
