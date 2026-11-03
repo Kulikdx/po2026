@@ -1,19 +1,20 @@
-package lab3;
+package agh.po.lab3;
+
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class CodingBatTest {
 
-    @org.junit.Test
+    @Test
     public void doubleX() {
-
     }
 
-    @org.junit.Test
+    @Test
     public void array123() {
     }
 
-    @org.junit.Test
+    @Test
     public void countEvens() {
     }
 }

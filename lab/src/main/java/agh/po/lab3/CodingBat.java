@@ -1,4 +1,4 @@
-package lab3;
+package agh.po.lab3;
 
 public class CodingBat {
     boolean doubleX(String str) {
