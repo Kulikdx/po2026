@@ -2,6 +2,9 @@ package agh.po.lab3;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.Assert.*;
 
 public class CodingBatTest {
@@ -34,5 +37,19 @@ public class CodingBatTest {
         assertEquals("ell", codingBat.withouEnd2("Hello"));
         assertEquals("b", codingBat.withouEnd2("abc"));
         assertEquals("", codingBat.withouEnd2(""));
+    }
+
+    @Test
+    public void mapAB2() {
+        assertEquals(Map.of("c", "cake"), codingBat.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "aaa", "c", "cake"))));
+        assertEquals(Map.of("a", "aaa", "b", "bbb"), codingBat.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb"))));
+        assertEquals(Map.of("a", "aaa", "b", "bbb", "c", "aaa"), codingBat.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "aaa"))));
+    }
+
+    @Test
+    public void wordCount() {
+        assertEquals(Map.of("a", 2, "b", 2, "c", 1), codingBat.wordCount(new String[]{"a", "b", "a", "c", "b"}));
+        assertEquals(Map.of("a", 1, "b", 1, "c", 1), codingBat.wordCount(new String[]{"c", "b", "a"}));
+        assertEquals(Map.of("c", 4), codingBat.wordCount(new String[]{"c", "c", "c", "c"}));
     }
 }
